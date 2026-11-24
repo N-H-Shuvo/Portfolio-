@@ -1062,6 +1062,31 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .nav-container {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 0.75rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-menu a {
+        font-size: 0.875rem;
+        white-space: nowrap;
+    }
+
+    .section[id],
+    .blog-post {
+        scroll-margin-top: 140px;
+    }
+
     .hero-name {
         font-size: 2rem;
     }
@@ -1077,10 +1102,6 @@ body {
     .profile-image img {
         width: 150px;
         height: 150px;
-    }
-
-    .nav-menu {
-        display: none;
     }
 
     .contact-content {
@@ -1099,6 +1120,11 @@ body {
     .hero-contact {
         flex-direction: column;
         align-items: center;
+    }
+
+    .hero-contact .contact-btn:first-child {
+        min-width: 0;
+        max-width: 300px;
     }
 
     .contact-btn {
